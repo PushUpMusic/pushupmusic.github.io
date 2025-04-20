@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PushUp Music</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0f;
+      color: white;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, #ff6f00, #9c27b0);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .hero .button {
+      background-color: #ffffff;
+      color: #0a0a0f;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .hero .button:hover {
+      background-color: #e0e0e0;
+    }
+    .app-download-section {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: #111120;
+    }
+    .app-download-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .app-download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .app-download-buttons a {
+      display: inline-block;
+      background-color: #1a1a2e;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(110, 110, 255, 0.2);
+      transition: background-color 0.3s;
+      color: white;
+      text-decoration: none;
+    }
+    .app-download-buttons a:hover {
+      background-color: #2a2a3e;
+    }
+    .donate-section {
+      padding: 4rem 1rem;
+      background-color: #0a0a0f;
+      color: white;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .donate-options {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .donate-option {
+      background-color: #1a1a2e;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 8px rgba(110, 110, 255, 0.2);
+      text-align: center;
+      max-width: 300px;
+    }
+    .donate-button {
+      background-color: #9c27b0;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .donate-button:hover {
+      background-color: #7a1b91;
+    }
+    footer {
+      background-color: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+    }
+    .footer-content a {
+      color: #ff6f00;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer-content a:hover {
+      color: #ffb86b;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .tracks-section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>PushUp Music</h1>
+    <p>Your Everyday, Reimagined</p>
+    <a href="#tracks" class="button">Browse Music</a>
+  </section>
+
+  <section class="app-download-section">
+    <h2>Get Our App</h2>
+    <p>Download the PushUp Music app for a seamless music experience</p>
+    <div class="app-download-buttons">
+      <a href="https://play.google.com/store/apps" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Play_Icon.svg" alt="Google Play" style="width: 150px;">
+        <p>Google Play</p>
+      </a>
+      <a href="https://apps.apple.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Apple_App_Store_icon.png" alt="App Store" style="width: 150px;">
+        <p>App Store</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <form action="#" method="GET" class="search-form">
+      <input type="text" name="q" placeholder="Search for tracks, artists, lyrics..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+  </section>
+
+  <section class="categories-section">
+    <h2>Explore by Category</h2>
+    <div class="categories-grid">
+      <div class="category-box">Oldies</div>
+      <div class="category-box">Latest Music</div>
+      <div class="category-box">Trending</div>
+      <div class="category-box">Gospel</div>
+      <div class="category-box">Cultural Music</div>
+      <div class="category-box">Artist Profiles</div>
+      <div class="category-box">Lyrics</div>
+      <div class="category-box">Albums</div>
+    </div>
+  </section>
+
+  <section class="tracks-section" id="tracks">
+    <h2>Featured Tracks</h2>
+    <div class="track-card">
+      <h3>Ocean Breeze</h3>
+      <p>by WaveRider</p>
+      <audio controls>
+        <source src="music/ocean-breeze.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="track-actions">
+        <a href="music/ocean-breeze.mp3" download><i class="fas fa-download"></i> Download</a>
+      </div>
+    </div>
+    <div class="track-card">
+      <h3>City Lights</h3>
+      <p>by Neon Dreams</p>
+      <audio controls>
+        <source src="music/city-lights.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="track-actions">
+        <a href="music/city-lights.mp3" download><i class="fas fa-download"></i> Download</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="donate-section">
+    <h2>Support Us</h2>
+    <p>Your donation helps keep PushUp Music alive and free for everyone!</p>
+    <div class="donate-options">
+      <div class="donate-option">
+        <img src="mtn-icon.png" alt="MTN Icon" style="width: 50px; height: auto;">
+        <p>000 000 0000</p>
+        <a class="donate-button" href="#">Send Now</a>
+      </div>
+      <div class="donate-option">
+        <img src="airtel-icon.png" alt="Airtel Icon" style="width: 50px; height: auto;">
+        <p>000 000 0000</p>
+        <a class="donate-button" href="#">Send Now</a>
+      </div>
+      <div class="donate-option">
+        <h3>PayPal</h3>
+        <p>paypal.me/pushupmusic</p>
+        <a class="donate-button" href="https://paypal.me/pushupmusic" target="_blank"><i class="fab fa-paypal"></i> Donate with PayPal</a>
+      </div>
+      <div class="donate-option">
+        <h3>Bank Transfer</h3>
+        <p>Bank Name: Your Bank Name</p>
+        <p>Account: 1234567890</p>
+        <a class="donate-button" href="#"><i class="fas fa-university"></i> Send Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/PushUpMusic" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://twitter.com/PushUpMusic" target="_blank"><i class="fab fa-twitter"></i> X</a>
+      <a href="https://www.tiktok.com/@PushUpMusic" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="https://www.youtube.com/PushUpMusic" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://www.pushupmusic.com" target="_blank"><i class="fas fa-globe"></i> Website</a>
+    </div>
+    <p>&copy; 2025 PushUp Music. All rights reserved.</p>
+  </footer>
+</body>
+</html>
